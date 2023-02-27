@@ -74,8 +74,13 @@ const db = mysql.createConnection(
   }
 
   function viewEmployees() {
-    const sql = 
-    db.query()
+    db.query(
+      `SELECT
+        employee.id AS 'Employee ID',
+        employee.firstName AS 'First Name',
+        employee.lastName AS 'Last Name',
+        `
+    )
   }
 
   function addEmployee() {
